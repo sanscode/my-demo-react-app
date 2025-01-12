@@ -1,38 +1,19 @@
 import React from "react";
 
+import {Navbar} from './layouts/NavbarAndFooter/Navbar';
+import {ExploreTopBooks} from './layouts/HomePage/components/ExploreTopBooks'
+
 import "./App.css";
 
 function App() {
-  return (
-    <div className="mt-5 container">
-      <div className="card">
-        <div>Yours todo</div>
-        <div className="card-body">
-          <table className="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Description</th>
-                <th scope="col">Assigned</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td>Feed dog</td>
-                <td>Eric</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Cut the grass</td>
-                <td>Eric</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
+  return(
+    <>
+    <Navbar/>
+    <ExploreTopBooks/>
+    </>
+
   );
+ 
 }
 
 export default App;
